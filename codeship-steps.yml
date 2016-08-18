@@ -1,6 +1,6 @@
 - service: elasticsearch
   command: echo builtES
-- service: elasticsearach
+- service: elasticsearch
   type: push
   image_name: topiaruss/elasticsearch
   registry: https://index.docker.io/v1/
