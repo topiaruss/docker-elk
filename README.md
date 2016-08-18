@@ -186,3 +186,9 @@ This will store elasticsearch data inside `/path/to/storage`.
 # Russ extensions
 
 ## adding Codeship
+
+This repo originally used docker-compose volume mounting to configure
+the services. This has not been removed, but the Dockerfiles
+have been modified to COPY the config files into place in the images. This
+makes the codeship and cloud stack setup easier.
+
