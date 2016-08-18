@@ -1,0 +1,18 @@
+elasticsearch:
+  build:
+    image: topiaruss/elasticsearch
+    path: elasticsearch
+    dockerfile_path: Dockerfile
+
+logstash:
+  build:
+    image: topiaruss/logstash
+    path: logstash
+    dockerfile_path: Dockerfile
+
+kibana:
+  build:
+    image: topiaruss/kibana
+    path: kibana
+    dockerfile_path: Dockerfile
+

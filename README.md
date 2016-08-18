@@ -182,3 +182,7 @@ elasticsearch:
 ```
 
 This will store elasticsearch data inside `/path/to/storage`.
+
+# Russ extensions
+
+## adding Codeship
