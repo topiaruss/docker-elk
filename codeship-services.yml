@@ -16,3 +16,11 @@ kibana:
     path: kibana
     dockerfile_path: Dockerfile
 
+filebeat:
+  build:
+    image: topiaruss/filebeat
+    path: filebeat
+    dockerfile_path: Dockerfile
+
+
+
