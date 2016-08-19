@@ -11,11 +11,11 @@ filebeat:
         - "/var/log/nginx/error.log"
       document_type: nginx-error
 
-  output:
-    logstash:
-      enabled: true
-      hosts: ["logstash:5000"]
-      index: logstash
+output:
+  logstash:
+    enabled: true
+    hosts: ["logstash:5000"]
+    index: logstash
 
 
 ###################### Filebeat Configuration Example #########################
@@ -107,9 +107,9 @@ filebeat:
   #password: "changeme"
 
 #----------------------------- Logstash output --------------------------------
-output.logstash:
+#output.logstash:
   # The Logstash hosts
-  hosts: ["localhost:5044"]
+  #hosts: ["localhost:5044"]
 
   # Optional TLS. By default is off.
   # List of root certificates for HTTPS server verifications
