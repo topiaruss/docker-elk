@@ -17,7 +17,7 @@ kibana:
     - backend
     - staging
 logstash:
-  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  command: logstash -f /etc/logstash/conf.d
   image: 'topiaruss/logstash:latest'
   links:
     - elasticsearch

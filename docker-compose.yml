@@ -7,9 +7,10 @@ elasticsearch:
 
 logstash:
   build: logstash/
-  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  command: logstash -f /etc/logstash/conf.d/
   volumes:
     - ./logstash/config:/etc/logstash/conf.d
+    - ./logstash/patterns:/opt/logstash/patterns
   ports:
     - "5000:5000"
     - "5044:5044"
