@@ -19,7 +19,7 @@ filebeat:
 output:
   logstash:
     enabled: true
-    hosts: ["logstash:5000"]
+    hosts: ["logstash:5044"]
     index: logstash
     compression_level: 0
 
