@@ -1,0 +1,29 @@
+elasticsearch:
+  command: elasticsearch -Des.network.host=0.0.0.0
+  image: 'topiaruss/elasticsearch:latest'
+  ports:
+    - '9200:9200'
+    - '9300:9300'
+  tags:
+    - backend
+    - staging
+kibana:
+  image: 'topiaruss/kibana:latest'
+  links:
+    - elasticsearch
+  ports:
+    - '5601:5601'
+  tags:
+    - backend
+    - staging
+logstash:
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  image: 'topiaruss/logstash:latest'
+  links:
+    - elasticsearch
+  ports:
+    - '5000:5000'
+    - '5044:5044'
+  tags:
+    - backend
+    - staging
