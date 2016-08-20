@@ -10,10 +10,10 @@ filebeat:
       paths:
         - "/var/log/nginx/error.log"
       document_type: nginx-error
-    -
-      paths:
-        - "/var/log/django/*.log"
-      document_type: django
+#    -
+#      paths:
+#        - "/var/log/django/*.log"
+#      document_type: django
 
 output:
   logstash:
