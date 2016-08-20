@@ -4,5 +4,6 @@ FROM logstash:latest
 # Example: RUN logstash-plugin install logstash-filter-json
 
  COPY config /etc/logstash/conf.d
+ COPY patterns /opt/logstash/patterns
 
  RUN logstash-plugin install logstash-input-beats
