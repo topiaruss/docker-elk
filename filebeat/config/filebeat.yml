@@ -20,6 +20,8 @@ output:
     enabled: true
     hosts: ["logstash:5000"]
     index: logstash
+    compression_level: 0
+
 
 
 ###################### Filebeat Configuration Example #########################
