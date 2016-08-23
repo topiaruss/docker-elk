@@ -1,3 +1,19 @@
+- service: filebeat
+  command: echo builtFB
+- service: filebeat
+  type: push
+  image_name: topiaruss/filebeat
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
+
+- service: filebeatcass
+  command: echo builtFBC
+- service: filebeatcass
+  type: push
+  image_name: topiaruss/filebeatcass
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
+
 - service: elasticsearch
   command: echo builtES
 - service: elasticsearch
@@ -19,22 +35,6 @@
 - service: kibana
   type: push
   image_name: topiaruss/kibana
-  registry: https://index.docker.io/v1/
-  encrypted_dockercfg_path: dockercfg.encrypted
-
-- service: filebeat
-  command: echo builtFB
-- service: filebeat
-  type: push
-  image_name: topiaruss/filebeat
-  registry: https://index.docker.io/v1/
-  encrypted_dockercfg_path: dockercfg.encrypted
-
-- service: filebeatcass
-  command: echo builtFBC
-- service: filebeatcass
-  type: push
-  image_name: topiaruss/filebeatcass
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
 
