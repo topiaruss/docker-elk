@@ -30,3 +30,11 @@
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
 
+- service: filebeatcass
+  command: echo builtFBC
+- service: filebeatcass
+  type: push
+  image_name: topiaruss/filebeat-cass
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
+

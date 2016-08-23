@@ -1,0 +1,11 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - /var/log/cassandra/system.log
+      input_type: log
+      fields:
+        cluster_name: test_cluster
+        datacenter: dc1
+      document_type: casslog
+      scan_frequency: 5s

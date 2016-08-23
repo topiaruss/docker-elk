@@ -22,5 +22,11 @@ filebeat:
     path: filebeat
     dockerfile_path: Dockerfile
 
+filebeatcass:
+  build:
+    image: topiaruss/filebeat-cass
+    path: filebeat-cass
+    dockerfile_path: Dockerfile
+
 
 
