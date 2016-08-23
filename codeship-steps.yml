@@ -34,7 +34,7 @@
   command: echo builtFBC
 - service: filebeatcass
   type: push
-  image_name: topiaruss/filebeat-cass
+  image_name: topiaruss/filebeatcass
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
 
